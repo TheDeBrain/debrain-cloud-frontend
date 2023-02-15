@@ -21731,18 +21731,6 @@ pre {
   -moz-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 991.98px) {
-  .navbar.horizontal-layout .nav-bottom {
-    display: none;
-  }
-
-  .navbar.horizontal-layout .nav-bottom.header-toggled {
-    display: block;
-    max-height: calc(100vh - 60px);
-    overflow: auto;
-  }
-}
-
 .navbar.horizontal-layout .nav-bottom .page-navigation {
   position: relative;
   width: 100%;
@@ -21759,24 +21747,11 @@ pre {
   transition-property: background, box-shadow;
 }
 
-@media (max-width: 991.98px) {
-  .navbar.horizontal-layout .nav-bottom .page-navigation {
-    border: none;
-  }
-}
-
 .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item {
   line-height: 1;
   text-align: left;
 }
 
-@media (max-width: 991.98px) {
-  .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item {
-    display: block;
-    width: 100%;
-    border-right: none;
-  }
-}
 
 @media (min-width: 992px) {
   .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item:first-child>.nav-link {
@@ -22076,14 +22051,6 @@ pre {
   }
 }
 
-@media (max-width: 991.98px) {
-  .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item.mega-menu .submenu {
-    position: relative;
-    top: 0;
-    box-shadow: none;
-  }
-}
-
 .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item.mega-menu .submenu .category-heading {
   font-size: .875rem;
   font-weight: 500;
@@ -22096,28 +22063,7 @@ pre {
 .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item.mega-menu .submenu .col-group-wrapper {
   padding: 0 1rem;
 }
-
-@media (max-width: 991.98px) {
-  .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item.mega-menu .submenu {
-    padding: 0 32px;
-  }
-
-  .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item.mega-menu .submenu .col-group-wrapper {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-  }
-
-  .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item.mega-menu .submenu .col-group-wrapper .col-group {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .navbar.horizontal-layout .nav-bottom .page-navigation>.nav-item.mega-menu .submenu .col-group-wrapper .col-group .category-heading:after {
-    display: none;
-  }
-}
+ 
 
 .navbar.horizontal-layout.fixed-on-scroll .nav-bottom {
   border-bottom: 1px solid #f2f2f2;
@@ -41852,6 +41798,7 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
+ 
 
 .row {
   --bs-gutter-x: 30px;

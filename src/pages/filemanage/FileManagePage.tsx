@@ -6,6 +6,7 @@ interface Props {
 
 interface State {
 	switchClassName: any;
+	fileAreaClassName: any;
 }
 
 class FileManagePage extends React.Component<Props, State> {
@@ -14,10 +15,12 @@ class FileManagePage extends React.Component<Props, State> {
 		if (flag == 0) {
 			this.setState(state => ({
 				switchClassName: "d-flex align-items-center folder-layout-tab",
+				fileAreaClassName: "folder-structure dz-scroll",
 			}));
 		} else if (flag == 1) {
 			this.setState(state => ({
 				switchClassName: "d-flex align-items-center folder-layout-tab grid",
+				fileAreaClassName: "folder-structure dz-scroll grid",
 			}));
 		}
 	}
@@ -26,6 +29,7 @@ class FileManagePage extends React.Component<Props, State> {
 		super(props);
 		this.state = {
 			switchClassName: 'd-flex align-items-center folder-layout-tab',
+			fileAreaClassName: "folder-structure dz-scroll",
 		}
 	}
 	render() {
@@ -205,7 +209,7 @@ class FileManagePage extends React.Component<Props, State> {
 									</div>
 								</div>
 								<div className="col-xl-12">
-									<ul className="folder-structure dz-scroll" id="folder">
+									<ul className={this.state.fileAreaClassName} id="folder">
 										<li>
 											<div className="file-list">
 												<div className="dz-media">
