@@ -9221,25 +9221,25 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 100%;
   }
 }
 
@@ -18425,6 +18425,7 @@ html {
 }
 
 .page-body-wrapper {
+  height: 100%;
   background: #f0f2f7;
   padding-left: 0;
   padding-right: 0;
@@ -18458,25 +18459,25 @@ html {
 
 @media (min-width: 576px) {
   .content-wrapper {
-    max-width: 540px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 768px) {
   .content-wrapper {
-    max-width: 720px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .content-wrapper {
-    max-width: 960px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .content-wrapper {
-    max-width: 1140px;
+    max-width: 100%;
   }
 }
 

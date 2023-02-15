@@ -1,41 +1,14 @@
 import React from 'react';
 
-import './css/style.css'
-import './vendors/iconfonts/simple-line-icon/css/simple-line-icons.css'
-import './vendors/iconfonts/flag-icon-css/css/flag-icon.min.css'
-import './vendors/css/vendor.bundle.base.css'
-import './vendors/iconfonts/simple-line-icon/css/simple-line-icons.css'
-
+import productTree from './data/product_tree.json'
 import menuTree from './data/menu_tree.json'
+import { Link, Outlet } from 'react-router-dom';
+import { Grid } from '@mui/material';
+import CategoryMenu from '../menus/CategoryMenu/CategoryMenu';
 
 class Head extends React.Component {
     constructor(props: any) {
         super(props);
-        let script = document.createElement('script')
-        script.type = 'text/javascript'
-        script.async = true
-        script.src = './js/template.js'
-        document.body.appendChild(script)
-
-        script.type = 'text/javascript'
-        script.async = true
-        script.src = './js/dashboard.js'
-        document.body.appendChild(script)
-        script.type = 'text/javascript'
-        script.async = true
-        script.src = './js/todolist.js'
-        document.body.appendChild(script)
-
-        script.type = 'text/javascript'
-        script.async = true
-        script.src = './vendors/js/vendor.bundle.base.js'
-        document.body.appendChild(script)
-
-        script.type = 'text/javascript'
-        script.async = true
-        script.src = './vendors/js/vendor.bundle.addons.js'
-        document.head.appendChild(script)
-
     }
     render() {
         return (
@@ -231,80 +204,8 @@ class Head extends React.Component {
                                 </li>
                                 <li className="nav-item mega-menu">
                                     <a href="#" className="nav-link"><i className="link-icon icon-film"></i><span className="menu-title">UI Elements</span><i className="menu-arrow"></i></a>
-                                    <div className="submenu">
-                                        <div className="col-group-wrapper row">
-                                            <div className="col-group col-md-4">
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <p className="category-heading">Basic Elements</p>
-                                                        <div className="submenu-item">
-                                                            <div className="row">
-                                                                <div className="col-md-6">
-                                                                    <ul>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/accordions.html">Accordion</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/badges.html">Badges</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/dropdowns.html">Dropdown</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/modals.html">Modals</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div className="col-md-6">
-                                                                    <ul>
-                                                                        {
-                                                                            menuTree.map((item, index) => {
-                                                                                return <li className="nav-item"><a className="nav-link" href="pages/ui-features/progress.html">{item} - 8</a></li>
-                                                                            })
-                                                                        }
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/progress.html">Progress bar</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/pagination.html">Pagination</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/tabs.html">Tabs</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/tooltips.html">Tooltip</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-group col-md-4">
-                                                <div className="row">
-                                                    <div className="col-12">
-                                                        <p className="category-heading">Advanced Elements</p>
-                                                        <div className="submenu-item">
-                                                            <div className="row">
-                                                                <div className="col-md-6">
-                                                                    <ul>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/dragula.html">Dragula</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/carousel.html">Carousel</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/clipboard.html">Clipboard</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/context-menu.html">Context Menu</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/loaders.html">Loader</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/slider.html">Slider</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div className="col-md-6">
-                                                                    <ul>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/popups.html">Popup</a></li>
-                                                                        <li className="nav-item"><a className="nav-link" href="pages/ui-features/notifications.html">Notification</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="col-group col-md-4">
-                                                <p className="category-heading">Icons</p>
-                                                <ul className="submenu-item">
-                                                    <li className="nav-item"><a className="nav-link" href="pages/icons/flag-icons.html">Flag Icons</a></li>
-                                                    <li className="nav-item"><a className="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
-                                                    <li className="nav-item"><a className="nav-link" href="pages/icons/simple-line-icon.html">Simple Line Icons</a></li>
-                                                    <li className="nav-item"><a className="nav-link" href="pages/icons/themify.html">Themify Icons</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                    <div className="submenu" style={{height:450}}>
+                                    <CategoryMenu categoryMenuData={productTree}/>
                                     </div>
                                 </li>
                                 <li className="nav-item">
@@ -432,7 +333,9 @@ class Head extends React.Component {
                 </nav>
                 <div className="container-fluid page-body-wrapper">
                     <div className="main-panel">
-                        <div className="content-wrapper"></div></div>
+                        <div className="content-wrapper">
+                            <Outlet />
+                        </div></div>
                 </div>
             </>
         )

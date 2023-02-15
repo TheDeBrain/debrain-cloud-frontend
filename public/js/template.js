@@ -1,6 +1,3 @@
-alert(123)
-
-
 (function($) {
   'use strict';
   $(function() {
