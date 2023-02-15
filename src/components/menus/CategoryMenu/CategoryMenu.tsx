@@ -36,7 +36,7 @@ class CategoryMenu extends React.Component<Props, State> {
         return (
             <>
                 <Grid container>
-                    <Grid item xl={3} lg={3} md={3} sm={3} xs={3} >
+                    <Grid item xl={2} lg={2} md={2} sm={2} xs={2} >
                         <div className="col-group-wrapper row" style={{ maxHeight: 400, overflowY: 'auto', overflowX: 'hidden' }}>
                             <div className="col-group">
                                 <div className="row">
@@ -57,7 +57,7 @@ class CategoryMenu extends React.Component<Props, State> {
                             </div>
                         </div>
                     </Grid>
-                    <Grid item xl={9} lg={9} md={9} sm={9} xs={9}>
+                    <Grid item xl={10} lg={10} md={10} sm={10} xs={10} style={{ paddingLeft: 20 }}>
                         <div className="col-group-wrapper row" style={{ maxHeight: 400, overflowY: 'auto', overflowX: 'hidden' }}>
                             {
                                 this.state.rgTreeData.map((item, index) => {
@@ -72,7 +72,10 @@ class CategoryMenu extends React.Component<Props, State> {
                                                             <ul>
                                                                 {
                                                                     smallClass.map((item, index) => {
-                                                                        return <li key={index} className="nav-item" ><a className="nav-link" href='#'>{item.name}</a></li>
+                                                                        return <Link className='link' to='/Tab1'>
+                                                                            <li key={index} className="nav-item" >
+                                                                                <a className="nav-link" href='#'>{item.name}</a></li>
+                                                                        </Link>
                                                                     })
                                                                 }
                                                             </ul>

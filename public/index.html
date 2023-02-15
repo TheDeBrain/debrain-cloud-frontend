@@ -34,6 +34,22 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="vendor/chartist/css/chartist.min.css">
+  <link href="vendor/wow-master/css/libs/animate.css" rel="stylesheet">
+  <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/jquery-nice-select/css/nice-select.css">
+  <link href="vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+  <!--swiper-slider-->
+  <link rel="stylesheet" href="vendor/swiper/css/swiper-bundle.min.css">
+
+  <!-- Style css -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+
+
+
   <title>React App</title>
   <style>
     #root {
@@ -72,6 +88,46 @@
   <script src="js/dashboard.js"></script>
   <script src="js/todolist.js"></script>
   <!-- End custom js for this page-->
+
+  <!--**********************************
+        Scripts
+    ***********************************-->
+  <!-- Required vendors -->
+  <script src="vendor/global/global.min.js"></script>
+  <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+  <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <!--datatables-->
+  <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+
+  <!-- Apex Chart -->
+  <script src="vendor/apexchart/apexchart.js"></script>
+  <script src="vendor/chart.js/Chart.bundle.min.js"></script>
+
+  <!-- Chart piety plugin files -->
+  <script src="vendor/peity/jquery.peity.min.js"></script>
+
+  <script src="vendor/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+
+  <!--swiper-slider-->
+  <script src="vendor/swiper/js/swiper-bundle.min.js"></script>
+
+  <script src="vendor/wow-master/dist/wow.min.js"></script>
+  <script src="js/deznav-2-init.js"></script>
+
+
+  <script src="js/custom.min.js"></script>
+  <script src="js/deznav-2-init.js"></script>
+  <script src="js/demo-2.js"></script>
+  <script>
+    //$(".nav-control").on('click', function() {
+    $(".folder-layout-tab").on('click', function () {
+      alert(1)
+      $('.folder-layout-tab, .folder-structure ').toggleClass("grid");
+    });
+  </script>
+
+
+
 
 </body>
 

@@ -18,7 +18,7 @@ root.render(
       <Routes>
         <Route path='/' element={<App />} >
           <Route path='Tab1' element={<DashboardPage />} />
-          <Route path='Tab2' element={<FileManagePage />} />
+          <Route path='fileManagePage' element={<FileManagePage />} />
         </Route>
       </Routes>
     </BrowserRouter>
