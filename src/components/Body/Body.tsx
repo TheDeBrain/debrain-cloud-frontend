@@ -14,7 +14,7 @@ class Body extends React.Component {
                 <div className="container-scroller">
                     <div className="container-fluid page-body-wrapper">
                         <div className="main-panel">
-                            <div className="content-wrapper">
+                            <div className="content-wrapper" style={{padding:0,marginTop:10}}>
                                 <Outlet />
                             </div></div>
                     </div>

@@ -15,7 +15,7 @@ class Head extends React.Component {
             <>
                 <nav style={{ position: 'sticky', top: 0, zIndex: 10,padding:0 }} className="navbar horizontal-layout">
                     <div className="nav-bottom">
-                        <div className="container">
+                        <div className="container" style={{paddingTop:0,paddingBottom:0,paddingLeft:50,paddingRight:50,maxWidth:'100%'}}>
                             <ul className="nav page-navigation">
                                 <li className="nav-item">
                                     <a href="index.html" className="nav-link">
